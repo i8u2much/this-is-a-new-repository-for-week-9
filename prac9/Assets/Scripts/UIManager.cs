@@ -1,26 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ScoreKeeper : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
-    public int score = 0;
-    int value = 10;
+    public Text scoreText;
+
+    ScoreKeeper scoreKeeper;
 
     // Start is called before the first frame update
     void Start()
     {
+        scoreKeeper = gameObject.GetComponent<ScoreKeeper>();
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        scoreText.text = "Score: " + scoreKeeper.score.ToString();
     }
 
-    public void increaseSccore()
-    {
-        score = score + value;
-    }
+
 }
