@@ -19,8 +19,8 @@ public class Coin : MonoBehaviour
 
         if (col.gameObject.name == "Player")
         {
-           
-            // call the score
+
+            score.increaseSccore();
             Destroy(this.gameObject);
         }
     }

@@ -19,7 +19,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "Score: " + scoreKeeper.score.ToString();
+        scoreText.text = "Score: " + scoreKeeper.SentScore();
     }
 
 
