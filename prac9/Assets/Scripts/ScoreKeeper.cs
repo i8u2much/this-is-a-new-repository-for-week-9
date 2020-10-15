@@ -5,6 +5,7 @@ using UnityEngine;
 public class ScoreKeeper : MonoBehaviour
 {
     int score = 0;
+    int value = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -16,5 +17,10 @@ public class ScoreKeeper : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public int increaseSccore(){
+        score = score + value;
+
     }
 }
